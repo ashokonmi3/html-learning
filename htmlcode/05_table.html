@@ -1,0 +1,137 @@
+<!-- Key Tags:
+
+<table>: Defines the table.
+
+<tr>: Defines a table row.
+
+<th>: Defines a table header cell (bold and centered by default).
+
+<td>: Defines a table data cell.
+ -->
+<!-- ===================== -->
+<!-- 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>City</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>25</td>
+    <td>New York</td>
+  </tr>
+  <tr>
+    <td>Jane</td>
+    <td>30</td>
+    <td>Los Angeles</td>
+  </tr>
+</table> -->
+<!-- ======================================= -->
+
+<!-- Horizontal Spanning (colspan): -->
+<!-- <table border="1">
+  <tr>
+    <th colspan="2">Personal Information</th>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>John</td>
+  </tr>
+</table> -->
+<!-- ======================= -->
+<!-- Vertical Spanning (rowspan): -->
+<!-- <table border="1">
+  <tr>
+    <th rowspan="2">Item</th>
+    <td>Price</td>
+  </tr>
+  <tr>
+    <td>Quantity</td>
+  </tr>
+</table> -->
+<!-- =================== -->
+<!-- Cell Spacing and Padding:
+
+Cell spacing and padding control the space between cells and the content within cells.
+
+Attributes:
+
+cellspacing: Sets the space between table cells.
+
+cellpadding: Sets the space between the cell border and its content. -->
+
+<!-- 
+<table border="1" cellspacing="0" cellpadding="25">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>25</td>
+  </tr>
+</table> -->
+
+<!-- ======================= -->
+<!-- Table Borders:
+
+Control table borders using the border attribute or CSS.
+
+Inline Example: -->
+<!-- <table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>25</td>
+  </tr>
+</table> -->
+<!-- ==================== -->
+
+<style>
+  table {
+    border-collapse: collapse;
+    width: 50%;
+  }
+  th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+  }
+</style>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>25</td>
+  </tr>
+</table>
+
+<!-- =============================== -->
+
+<!-- Frequently Asked Questions (FAQs)
+
+Q1: What is the difference between colspan and rowspan?
+
+colspan: Merges multiple columns into a single cell.
+
+rowspan: Merges multiple rows into a single cell.
+
+Q2: How can I remove the space between table cells?
+
+Use the CSS property border-collapse: collapse; to remove the space.
+
+Q3: What is the default value of cellpadding and cellspacing?
+
+The default value is typically 1 for cellpadding and 2 for cellspacing, but it varies across browsers.
+
+Q4: How to make a responsive table?
+
+Use the CSS property overflow-x: auto; to make the table scrollable horizontally on smaller screens. -->
+

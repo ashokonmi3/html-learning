@@ -1,0 +1,104 @@
+<!-- 1. Types of Lists in HTML
+Numbered List (Ordered List):
+
+<ol>: Creates an ordered list.
+<li>: Represents each list item.
+Attributes:
+type: Defines the numbering style (e.g., 1, a, A, i, I).
+start: Specifies the starting number.
+reversed: Reverses the order. -->
+
+<!-- Bulleted List (Unordered List):
+
+<ul>: Creates an unordered list.
+<li>: Represents each list item.
+Attributes:
+type: Defines the bullet style (disc, circle, square). -->
+
+<!-- Nested Lists
+Combine <ol> and <ul> to create hierarchical lists. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Lists Example</title>
+  <style>
+    /* Styling lists */
+    ul.custom-bullet {
+      list-style-type: none; /* Remove default bullets */
+    }
+
+    ul.custom-bullet li {
+      position: relative;
+      padding-left: 20px; /* Space for custom bullet */
+    }
+
+    ul.custom-bullet li::before {
+      content: "\2022"; /* Unicode for bullet */
+      color: blue;
+      font-size: 1.2em;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    ol.reversed-list {
+      list-style: upper-roman; /* Roman numerals */
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML Lists Demonstration</h1>
+
+  <!-- Ordered List -->
+  <h2>Ordered List (Numbered List)</h2>
+  <ol type="I" start="3" reversed class="reversed-list">
+    <li>Third Roman numeral</li>
+    <li>Second Roman numeral</li>
+    <li>First Roman numeral</li>
+  </ol>
+
+  <!-- Unordered List -->
+  <h2>Unordered List (Bulleted List)</h2>
+  <ul type="circle">
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+  </ul>
+
+  <!-- Custom Bullet List -->
+  <h2>Custom Bulleted List</h2>
+  <ul class="custom-bullet">
+    <li>Custom Bullet 1</li>
+    <li>Custom Bullet 2</li>
+    <li>Custom Bullet 3</li>
+  </ul>
+
+  <!-- Nested Lists -->
+  <h2>Nested Lists</h2>
+  <ul>
+    <li>Outer Item 1
+      <ol>
+        <li>Inner Item 1</li>
+        <li>Inner Item 2</li>
+      </ol>
+    </li>
+    <li>Outer Item 2</li>
+  </ul>
+
+  <!-- Practice Section -->
+  <h2>Practice Section</h2>
+  <p>Create your own list structure by editing this section.</p>
+  <ul>
+    <li>Example item
+      <ul>
+        <li>Sub-item</li>
+        <li>Another Sub-item</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>

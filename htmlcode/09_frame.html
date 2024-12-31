@@ -1,0 +1,74 @@
+<!-- 1. Understanding the Need for Frames in Web Pages
+Frames were used in early web development to divide a webpage into multiple sections, each capable of loading a different HTML document. This allowed for the creation of complex layouts with independent scrolling, navigation, or content updates in different sections of the same browser window.
+
+Advantages of Using Frames:
+
+Content Separation: Frames enable the separation of content into independent sections.
+Reuse: Allows the reuse of navigation menus or headers across multiple pages.
+Independent Scrolling: Each frame can have its own scrollbar.
+Disadvantages of Using Frames:
+
+Accessibility Issues: Frames can make it harder for screen readers to navigate.
+Navigation Problems: Linking to a specific frame or section can be complex.
+Deprecated Feature: The <frame> and <frameset> elements are obsolete in HTML5. Instead, modern techniques like CSS Grid or Flexbox should be used for layout purposes.
+2. Learn to Create and Work with Frames
+Frames were created using the <frameset> tag to define the layout and the <frame> tag to define each individual frame.
+
+Basic Syntax of Frames:
+
+html
+Copy code
+<frameset cols="*, *">
+  <frame src="page1.html" name="frame1">
+  <frame src="page2.html" name="frame2">
+</frameset>
+Attributes of <frameset>:
+cols: Specifies the number and size of columns.
+rows: Specifies the number and size of rows.
+Attributes of <frame>:
+src: Specifies the URL of the document to display in the frame.
+name: Assigns a name to the frame (useful for linking).
+scrolling: Controls scrolling (yes, no, or auto).
+noresize: Prevents resizing of the frame. -->
+<!-- ======================= -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Frames Example</title>
+</head>
+<frameset cols="50%, 50%">
+  <frame src="header1.html" name="frame1">
+  <frame src="header2.html" name="frame2">
+</frameset>
+</html> -->
+<!-- ======================= -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Frames with Rows</title>
+</head>
+<frameset rows="25%, 75%">
+  <frame src="header1.html" name="header">
+  <frame src="header2.html" name="content">
+</frameset>
+</html> -->
+<!-- ====================== -->
+<!-- Nested Frames Example -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nested Frames</title>
+</head>
+<frameset rows="30%, 70%">
+  <frame src="header1.html" name="header">
+  <frameset cols="30%, 70%">
+    <frame src="menu.html" name="menu">
+    <frame src="main.html" name="main">
+  </frameset>
+</frameset>
+</html>
