@@ -1,0 +1,125 @@
+<!-- CSS Selectors
+In CSS, selectors are used to select HTML elements that we want to style. 
+There are different types of selectors based on how we target elements in HTML. 
+Below are the key types of CSS selectors.
+
+1. Type Selector (Element Selector)
+Definition: The type selector, also known as the element selector, targets all elements of a specific type.
+Usage: If you want to apply styles to all elements of a particular type (like <p>, <h1>, or <div>), you use the type selector. -->
+<!-- ===================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Type Selector Example</title>
+  <style>
+    p {
+      color: blue;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Type Selector</h1>
+  <p>This paragraph is selected using the type selector and will be blue.</p>
+  <p>This is another paragraph with the same styling applied.</p>
+
+</body>
+</html>
+
+<!-- ===================== -->
+<!-- 2. Universal Selector
+Definition: The universal selector (*) targets all elements on the page. It is useful when you want to apply styles universally across all elements.
+Usage: It can be used to reset styles or apply a common style to all elements. -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Universal Selector Example</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Universal Selector</h1>
+  <p>This paragraph has no margin or padding, as the universal selector applied these styles.</p>
+
+</body>
+</html> -->
+
+<!-- Explanation: The universal selector (*) applies margin: 0; padding: 0; to all elements, removing the default margin and padding. -->
+
+<!-- =================== -->
+<!-- 3. ID Selector
+Definition: The ID selector targets an element with a specific id attribute. It is unique on a page, meaning that no two elements should share the same id.
+Usage: The ID selector is used when you need to target a specific element that has a unique id. -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ID Selector Example</title>
+  <style>
+    #specialText {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS ID Selector</h1>
+  <p id="specialText">This paragraph is selected using the ID selector and will be red and bold.</p>
+  <p>This paragraph is not affected by the ID selector.</p>
+
+</body>
+</html> -->
+
+<!-- Explanation: The #specialText selector targets the element with the id="specialText", making the text red and bold. -->
+
+<!-- ============================= -->
+
+<!-- 4. Class Selector
+Definition: The class selector targets all elements with a specific class. Unlike IDs, multiple elements can share the same class.
+Usage: The class selector is useful for styling groups of elements in the same way.
+Example: -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Class Selector Example</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Class Selector</h1>
+  <p class="highlight">This paragraph is highlighted with a yellow background using the class selector.</p>
+  <p class="highlight">This paragraph also has the same styling because it shares the same class.</p>
+  <p>This paragraph does not have the "highlight" class, so it is not affected by the class selector.</p>
+
+</body>
+</html> -->
+
+<!-- Explanation: The .highlight selector applies a yellow background and 18px font size to all elements with the highlight class. -->
+
+<!-- ========================= -->
+
+<!-- Summary of CSS Selectors:
+Type Selector: Targets all elements of a specified type (e.g., p, div, h1).
+Universal Selector: Targets all elements on the page (*).
+ID Selector: Targets an element with a specific id (e.g., #specialText).
+Class Selector: Targets all elements with a specific class (e.g., .highlight). -->

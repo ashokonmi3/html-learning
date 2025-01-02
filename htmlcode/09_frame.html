@@ -1,5 +1,8 @@
 <!-- 1. Understanding the Need for Frames in Web Pages
-Frames were used in early web development to divide a webpage into multiple sections, each capable of loading a different HTML document. This allowed for the creation of complex layouts with independent scrolling, navigation, or content updates in different sections of the same browser window.
+Frames were used in early web development to divide a webpage into multiple sections,
+ each capable of loading a different HTML document. 
+ This allowed for the creation of complex layouts with independent scrolling, navigation, 
+ or content updates in different sections of the same browser window.
 
 Advantages of Using Frames:
 
@@ -31,6 +34,8 @@ name: Assigns a name to the frame (useful for linking).
 scrolling: Controls scrolling (yes, no, or auto).
 noresize: Prevents resizing of the frame. -->
 <!-- ======================= -->
+<!--  OPEN BELOW CODE IN BROWSER TO SEE THE FRAME -->
+
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,9 +47,11 @@ noresize: Prevents resizing of the frame. -->
   <frame src="header2.html" name="frame2">
 </frameset>
 </html> -->
-<!-- ======================= -->
 
-<!-- <!DOCTYPE html>
+
+<!-- ======================= -->
+<!-- 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -58,7 +65,7 @@ noresize: Prevents resizing of the frame. -->
 <!-- ====================== -->
 <!-- Nested Frames Example -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -71,4 +78,68 @@ noresize: Prevents resizing of the frame. -->
     <frame src="main.html" name="main">
   </frameset>
 </frameset>
+</html> -->
+<!-- ========================= -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iframe Example</title>
+</head>
+<body>
+  <h1>Iframe Example</h1>
+  <p>Below are two HTML files displayed side by side:</p>
+  <table>
+    <tr>
+      <td>
+        <iframe src="header1.html" title="Header 1" width="500" height="300"></iframe>
+      </td>
+      <td>
+        <iframe src="header2.html" title="Header 2" width="500" height="300"></iframe>
+      </td>
+    </tr>
+  </table>
+</body>
+</html> -->
+<!-- ==================== -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iframe Example</title>
+</head>
+<body>
+  <h1>Iframe Example</h1>
+  <p>Below are two HTML files displayed side by side:</p>
+
+  <iframe src="header1.html" title="Header 1" width="500" height="300"></iframe>
+  <iframe src="header2.html" title="Header 2" width="500" height="300"></iframe>
+
+</body>
+</html> -->
+<!-- =================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iframe with Scrolling</title>
+</head>
+<body>
+  <h1>Iframe Example with Scrolling</h1>
+  <p>Below are two HTML files displayed side by side:</p>
+
+  <!-- First iframe -->
+  <iframe src="header1.html" title="Header 1" width="500" height="300" scrolling="yes"></iframe>
+
+  <!-- Second iframe -->
+  <iframe src="header2.html" title="Header 2" width="500" height="300" scrolling="yes"></iframe>
+
+</body>
 </html>

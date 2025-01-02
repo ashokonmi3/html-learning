@@ -1,0 +1,97 @@
+<!-- Date (type="date")
+Used for selecting a date from a calendar interface. -->
+<!-- Features:
+Provides a date picker.
+Prevents invalid date formats. -->
+
+<!-- <label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob"> -->
+<!-- =============== -->
+<!-- Number (type="number")
+Used for numeric inputs.
+Features:
+Allows only numbers.
+Supports min, max, and step attributes for validation.
+
+-->
+<!-- 
+<label for="age">Age:</label>
+<input type="number" id="age" name="age" min="1" max="100" step="1"> -->
+<!-- ============================= -->
+
+<!-- Range (type="range")
+Creates a slider for selecting a numeric value within a range. -->
+<!-- Features:
+Provides a visual slider.
+Ideal for user-friendly numeric adjustments.
+Example: -->
+<!-- 
+<label for="volume">Volume:</label>
+<input type="range" id="volume" name="volume" min="0" max="100" step="10"> -->
+<!-- =================== -->
+<!-- Email (type="email")
+For email addresses. -->
+<!-- Features:
+Validates email format.
+Provides error messages for incorrect formats.
+Example: -->
+<!-- 
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="example@domain.com"> -->
+
+<!-- ================================ -->
+<!-- Search (type="search")
+Used for search input fields.
+Features:
+Optimized for search queries.
+Often styled differently in browsers.
+Example: -->
+<!-- 
+<label for="search">Search:</label>
+<input type="search" id="search" name="query" placeholder="Search here..."> -->
+<!-- ========================= -->
+<!-- Datalist (<datalist>)
+Provides a dropdown list of predefined options for an input field.
+Features:
+Suggests options while allowing custom input.
+Example: -->
+
+<label for="browsers">Choose a browser:</label>
+<input list="browsers" id="browser" name="browser">
+<datalist id="browsers">
+  <option value="Chrome">
+  <option value="Firefox">
+  <option value="Edge">
+  <option value="Safari">
+  <option value="Opera">
+</datalist>
+<!-- ==================== -->
+<!-- 
+Media Elements in HTML5
+Audio (<audio>)
+Used to embed audio content.
+controls attribute adds play, pause, volume buttons.
+Video (<video>)
+Used to embed video content.
+Features:
+Supports controls, autoplay, loop, and muted attributes.
+Example: -->
+
+<audio controls>
+  <source src="audiofile.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<video controls width="600">
+  <source src="videofile.mp4" type="video/mp4">
+  Your browser does not support the video element.
+</video>
+
+<!-- =========================== -->
+
+
+
+
+
+
+

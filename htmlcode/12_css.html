@@ -1,0 +1,79 @@
+<!-- Basic Structure:
+CSS is written in rules that include a selector, property, and value.
+
+selector {
+  property: value;
+}
+Example:
+
+p {
+  color: blue;
+  font-size: 16px;
+}
+
+selector: Targets <p> elements.
+property: color and font-size.
+value: blue and 16px. -->
+<!-- ======================== -->
+<!-- Types of CSS
+A. Inline CSS
+Applied directly to an HTML element using the style attribute.
+Use Case:
+Quick styling for single elements.
+Example: -->
+
+<!-- <p style="color: red; font-size: 14px;">This is inline CSS.</p> -->
+
+<!-- =================== -->
+<!-- 
+Internal CSS
+Defined inside a <style> tag within the <head> of the document. -->
+    <!-- Use Case:
+    For styling a single page.
+    Example: -->
+
+<!-- <html>
+<head>
+  <style>
+    body {
+      background-color: lightgray;
+    }
+    h1 {
+      color: darkblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Internal CSS Example</h1>
+</body>
+</html> -->
+
+<!-- ===================== -->
+<!-- 
+External CSS
+Written in a separate .css file and linked to the HTML document.
+rel="stylesheet": This specifies the relationship between the current document and the linked file. In this case, it tells the browser that the linked file is a stylesheet.
+Use Case:
+Reusable and maintainable styles across multiple pages.
+
+Example: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example</title>
+  <link rel="stylesheet" href="12_styles.css">
+</head>
+<body>
+  <h1>Hello, World!</h1>
+</body>
+</html>
+
+<!-- ==================== -->
+<!-- Comparison of Types
+Type	    |    Pros	                                |Cons
+---------------------------------------------------------------------------------------------------
+Inline CSS	|   Quick to apply for single elements.	    |Difficult to maintain for large projects.
+Internal CSS|	Useful for single-page styles.	        |Cannot reuse across pages.
+External CSS|	Reusable and maintainable across pages.	|Requires linking and file management. -->
