@@ -19,8 +19,7 @@ Frames were created using the <frameset> tag to define the layout and the <frame
 
 Basic Syntax of Frames:
 
-html
-Copy code
+
 <frameset cols="*, *">
   <frame src="page1.html" name="frame1">
   <frame src="page2.html" name="frame2">
@@ -35,14 +34,14 @@ scrolling: Controls scrolling (yes, no, or auto).
 noresize: Prevents resizing of the frame. -->
 <!-- ======================= -->
 <!--  OPEN BELOW CODE IN BROWSER TO SEE THE FRAME -->
-
-<!-- <!DOCTYPE html>
+<!-- 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Frames Example</title>
 </head>
-<frameset cols="50%, 50%">
+<frameset cols="20%, 80%">
   <frame src="header1.html" name="frame1">
   <frame src="header2.html" name="frame2">
 </frameset>
@@ -79,9 +78,45 @@ noresize: Prevents resizing of the frame. -->
   </frameset>
 </frameset>
 </html> -->
-<!-- ========================= -->
 
+<!-- =============== -->
 <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nested Frames</title>
+</head>
+<frameset rows="30%, 70%">
+  <frame src="header1.html" name="header">
+  <frameset cols="30%, 20% ,50%">
+    <frame src="menu.html" name="menu">
+    <frame src="main.html" name="main">
+  </frameset>
+</frameset>
+</html> -->
+<!-- =================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nested Frames</title>
+</head>
+<frameset rows="30%, 70%,20%">
+  <frame src="header1.html" name="header">
+  <frameset cols="30%, 70%">
+    <frame src="menu.html" name="menu">
+    <frame src="main.html" name="main">
+  </frameset>
+</frameset>
+</html>
+
+
+
+
+<!-- ========================= -->
+<!-- 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -105,8 +140,8 @@ noresize: Prevents resizing of the frame. -->
 </html> -->
 <!-- ==================== -->
 
-
-<!-- <!DOCTYPE html>
+<!-- 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -124,7 +159,7 @@ noresize: Prevents resizing of the frame. -->
 </html> -->
 <!-- =================== -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -135,11 +170,38 @@ noresize: Prevents resizing of the frame. -->
   <h1>Iframe Example with Scrolling</h1>
   <p>Below are two HTML files displayed side by side:</p>
 
-  <!-- First iframe -->
-  <iframe src="header1.html" title="Header 1" width="500" height="300" scrolling="yes"></iframe>
+   <iframe src="header1.html" title="Header 1" width="500" height="3000" scrolling="yes"></iframe>
 
-  <!-- Second iframe -->
-  <iframe src="header2.html" title="Header 2" width="500" height="300" scrolling="yes"></iframe>
+  <iframe src="header2.html" title="Header 2" width="500" height="3000" scrolling="yes"></iframe>
 
 </body>
-</html>
+</html> -->
+<!-- ===================== -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iframe with Scrollbar</title>
+</head>
+<body>
+  <h1>Iframe Example with Scrollbar</h1>
+  <p>The iframe below demonstrates scrolling with content that exceeds the iframe's size.
+      Iframe pointing to a local file with overflowing content
+
+  </p>
+  
+  <iframe 
+    srcdoc="<html><body><h2>Iframe Content</h2><p>This content exceeds the size of the iframe.</p><p style='margin-top: 500px;'>Scroll to see this text.</p></body></html>" 
+    width="400" 
+    height="200" 
+    style="border: 1px solid black; overflow: auto;">
+  </iframe>
+
+  <p>
+    The iframe contains content that is larger than its height, so you can scroll to view the full content.
+  </p>
+</body>
+</html> -->
+
